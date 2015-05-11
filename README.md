@@ -11,7 +11,7 @@ $ docker run -it -v $(pwd):/mnt mcandre/docker-gcc bash
 root@b2b639fe64c0:/# cd /mnt
 root@b2b639fe64c0:/mnt# mkdir -p bin/
 root@b2b639fe64c0:/mnt# gcc -o bin/hello --static hello.c
-root@b2b639fe64c0:/mnt# bin/hello 
+root@b2b639fe64c0:/mnt# bin/hello
 Hello World!
 root@b2b639fe64c0:/mnt# exit
 $ ls bin/
