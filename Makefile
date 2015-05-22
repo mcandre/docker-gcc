@@ -1,9 +1,12 @@
 IMAGE=mcandre/docker-gcc
 
-all: clean-containers build
+all: run
 
 build: Dockerfile
 	docker build -t $(IMAGE) .
+
+run: clean-containers build
+	docker run $(IMAGE) gcc -v
 
 clean-containers:
 	-docker ps -a | grep -v IMAGE | awk '{ print $$1 }' | xargs docker rm -f
