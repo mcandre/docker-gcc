@@ -1,4 +1,4 @@
-IMAGE=mcandre/docker-gcc
+IMAGE=mcandre/docker-gcc:4
 
 all: run
 

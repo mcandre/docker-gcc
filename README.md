@@ -7,7 +7,7 @@ https://registry.hub.docker.com/u/mcandre/docker-gcc/
 # EXAMPLE
 
 ```
-$ docker run -it -v $(pwd):/mnt mcandre/docker-gcc bash
+$ docker run -it -v $(pwd):/mnt mcandre/docker-gcc:4 bash
 root@b2b639fe64c0:/# cd /mnt
 root@b2b639fe64c0:/mnt# mkdir -p bin/
 root@b2b639fe64c0:/mnt# gcc -o bin/hello --static hello.c
