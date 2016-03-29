@@ -1,5 +1,40 @@
 bin/
-# Created by https://www.gitignore.io/api/node
+# Created by https://www.gitignore.io/api/c,node
+
+### C ###
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+
 
 ### Node ###
 # Logs
@@ -27,8 +62,9 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directory
+# Dependency directories
 node_modules
+jspm_packages
 
 # Optional npm cache directory
 .npm
